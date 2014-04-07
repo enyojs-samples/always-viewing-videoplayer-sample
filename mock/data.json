@@ -1,0 +1,69 @@
+[
+	{
+		"category": "A Category",
+		"videos": [
+			{
+				"bogusThumbnail": "http://peach.blender.org/wp-content/uploads/bbb-splash.png",
+				"title": "Video 1",
+				"url": "http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4",
+				"description": "Sample video"
+			},
+			{
+				"bogusThumbnail": "http://peach.blender.org/wp-content/uploads/rodents.png",
+				"title": "Video 2",
+				"url": "http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4",
+				"description": "Sample video"
+			},
+			{
+				"bogusThumbnail": "http://peach.blender.org/wp-content/uploads/evil-frank.png",
+				"title": "Video 3",
+				"url": "http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4",
+				"description": "Sample video"
+			},
+			{
+				"bogusThumbnail": "http://peach.blender.org/wp-content/uploads/bunny-bow.png",
+				"title": "Video 4",
+				"url": "http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4",
+				"description": "Sample video"
+			},
+			{
+				"bogusThumbnail": "http://peach.blender.org/wp-content/uploads/rinkysplash.jpg",
+				"title": "Video 5",
+				"url": "http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4",
+				"description": "Sample video"
+			},
+			{
+				"bogusThumbnail": "http://peach.blender.org/wp-content/uploads/its-a-trap.png",
+				"title": "Video 6",
+				"url": "http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4",
+				"description": "Sample video"
+			}
+		],
+		"thumbnail": "http://peach.blender.org/wp-content/uploads/bbb-splash.png"
+	},
+	{
+		"category": "B Category",
+		"videos": [],
+		"thumbnail": "http://peach.blender.org/wp-content/uploads/rodents.png"
+	},
+	{
+		"category": "C Category",
+		"videos": [],
+		"thumbnail": "http://peach.blender.org/wp-content/uploads/evil-frank.png"
+	},
+	{
+		"category": "D Category",
+		"videos": [],
+		"thumbnail": "http://peach.blender.org/wp-content/uploads/bunny-bow.png"
+	},
+	{
+		"category": "E Category",
+		"videos": [],
+		"thumbnail": "http://peach.blender.org/wp-content/uploads/rinkysplash.jpg"
+	},
+	{
+		"category": "F Category",
+		"videos": [],
+		"thumbnail": "http://peach.blender.org/wp-content/uploads/its-a-trap.png"
+	}
+]

@@ -1,15 +1,27 @@
-## About
+Lifeboat
+=========
 
-bootplate-moonstone is a template for a minimal Enyo and Moonstone web application.
-You would normally use this to setup your local environment then go and modify the
-files to build your own application.  By itself, it does almost nothing.
+This is an application template for long form video.  Currently, content providers (CPs) are expected to return an array of video categories from a Web service.  See ***source/mock/data.json*** for an example.
 
-## Downloading
+## Quick-Start
 
-To download a version of bootplate-moonstone with all of the submodules populated
-for quick use, visit http://enyojs.com/get-enyo/.  The download link in GitHub will
-give you just the bootplate repo without any of the supporting libraries.
+### Changing Application Information
+In ***appinfo.json*** you must change the **id** property to a unique value.  Convention holds with reverse domain name notation.
 
-As an alternative, you can use a Git client to clone this repo and then initialize
-submodules. This is good if you want to work with the latest version of the code from
-GitHub that we may not have packaged into an official release.
+### Changing the Default Panel
+Lifeboat.Panel is defined in ***source/views/custom/Panel.js***.
+
+### Using Mock Data
+Specify in ***source/start.js*** or otherwise set the **mockData** property of the application object to *true* or *false*.
+
+### Customizing
+#### Your Web Service
+Set the URL of your Web service in the declaration found in ***source/app/apps.js***.  Specify any query parameters in its *populateCategories()* method.
+
+The *processData()* method handles re-structuring the initial Web service response into the "Collection of Collections" data structure around which the application template is designed.
+
+#### Your Data
+For the video models, look in ***source/models/models.js*** and change the *parse()* method to fit the data that returns from your web service.  Be sure to read the comments for what properties the template expects.
+
+#### Your List Items
+The category and video list items are independent from one another and can be modified to suit the CP's needs.  The template/default items are defined in ***source/views/custom/CategoryListItem.js*** and ***source/views/custom/VideoListItem.js***.  Various list item styles are in ***source/style/main.css***.

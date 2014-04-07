@@ -1,3 +1,9 @@
 enyo.depends(
-	"views.js"
+	"videoPlayer",
+	"categoriesPanel",
+	"videosPanel",
+	"detailsPanel",
+	"main.js",
+	// load customized kinds/items
+	"custom"
 );
