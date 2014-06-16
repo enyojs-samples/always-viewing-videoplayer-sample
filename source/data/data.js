@@ -32,3 +32,21 @@ enyo.kind({
 	kind: "enyo.Collection",
 	model: "Sample.AlwaysViewingVideo.VideoModel"
 });
+
+enyo.kind({
+	name: "Sample.AlwaysViewingVideo.CategoryCollection",
+	kind: "enyo.Collection",
+	parse: function(data) {
+		// expects to be receiving an array of arrays, change to match your raw data response
+		enyo.forEach(data, this.bindSafely(function(category) {
+			// make a collection for each category that will hold its videos
+			category.contentCollection = new Sample.AlwaysViewingVideo.VideoCollection();
+			if (category.videos) {
+				// add the category's videos as models to the collection
+				category.contentCollection.add(category.videos);
+				delete category.videos;
+			}
+		}));
+		return data;
+	}
+});
