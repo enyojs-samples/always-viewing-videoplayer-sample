@@ -6,14 +6,8 @@ enyo.kind({
 		{name: "categories", kind: "Sample.AlwaysViewingVideo.CategoryCollection", url: "mock/data.json"}
 	],
 	view: "Sample.AlwaysViewingVideo.MainView",
-	start: enyo.inherit(function(sup) {
-		return function() {
-			sup.apply(this, arguments);
-			// this.populateCateogries();
-		}
-	}),
 	populateCateogries: function() {
-		this.$.categories.fetch({fail: enyo.bindSafely(this, "processError")});
+		this.$.categories.fetch({fail: this.bindSafely("processError")});
 	},
 	processError: function() {
 		this.log("DEAL WITH THIS");
