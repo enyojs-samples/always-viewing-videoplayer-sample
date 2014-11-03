@@ -5,8 +5,18 @@
 */
 
 enyo.kind({
+	name: "Sample.AlwaysViewingVideo.ContentSource",
+	kind: "enyo.AjaxSource"
+});
+
+new Sample.AlwaysViewingVideo.ContentSource({name: "source"});
+
+enyo.kind({
 	name: "Sample.AlwaysViewingVideo.VideoModel",
 	kind: "enyo.Model",
+	options: {
+		parse: true
+	},
 	parse: function(data) {
 		// do any necessary mapping of properties to
 		// what the various views of the template expect
@@ -36,6 +46,10 @@ enyo.kind({
 enyo.kind({
 	name: "Sample.AlwaysViewingVideo.CategoryCollection",
 	kind: "enyo.Collection",
+	source: "source",
+	options: {
+		parse: true
+	},
 	parse: function(data) {
 		// expects to be receiving an array of arrays, change to match your raw data response
 		enyo.forEach(data, this.bindSafely(function(category) {

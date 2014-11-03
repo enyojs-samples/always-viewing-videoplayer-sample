@@ -17,8 +17,8 @@ enyo.kind({
 		]}
 	],
 	bindings: [
-		{from: ".model.thumbnail", to: ".$.thumbnail.src"},
-		{from: ".model.title", to: ".$.title.content"}
+		{from: "model.thumbnail", to: "$.thumbnail.src"},
+		{from: "model.title", to: "$.title.content"}
 	],
 	requestScroll: function(inSender, inEvent) {
 		this.bubble("onRequestScrollIntoView");

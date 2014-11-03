@@ -7,7 +7,7 @@ enyo.kind({
 		{name: "category"}
 	],
 	bindings: [
-		{from: ".model.thumbnail", to: ".$.thumbnail.src"},
-		{from: ".model.category", to: ".$.category.content"}
+		{from: "model.thumbnail", to: "$.thumbnail.src"},
+		{from: "model.category", to: "$.category.content"}
 	]
 });

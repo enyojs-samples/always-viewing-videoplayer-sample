@@ -3,8 +3,8 @@ enyo.kind({
 	kind: "moon.VideoInfoHeader",
 	// bind some model data to populate the info header
 	bindings: [
-		{from: ".model.title", to: ".title"},
-		{from: ".model.description", to: ".description"}
+		{from: "model.title", to: "title"},
+		{from: "model.description", to: "description"}
 	]
 });
 
@@ -15,7 +15,7 @@ enyo.kind({
 	classes: "enyo-fit",
 	// Drive the video player with a collection of video models
 	bindings: [
-		{from: ".videos.length", to: ".length"}
+		{from: "videos.length", to: "length"}
 	],
 	components: [
 		{name: "player", kind: "moon.VideoPlayer", infoComponents: [

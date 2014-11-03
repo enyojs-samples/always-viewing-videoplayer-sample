@@ -18,7 +18,7 @@ enyo.kind({
 		]}
 	],
 	bindings: [
-		{from: ".app.$.videoList.collection", to: ".$.player.videos"}
+		{from: "app.$.videoList.collection", to: "$.player.videos"}
 	],
 	selectCategory: function(inSender, inEvent) {
 		var model = inEvent.model;

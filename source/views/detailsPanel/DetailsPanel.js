@@ -12,10 +12,10 @@ enyo.kind({
 		]}
 	],
 	bindings: [
-		{from: ".model.title", to: ".title"},
-		{from: ".model.title", to: ".$.title.content"},
-		{from: ".model.description", to: ".$.description.content"},
-		{from: ".model.thumbnail", to: ".$.thumbnail.src"}
+		{from: "model.title", to: "title"},
+		{from: "model.title", to: "$.title.content"},
+		{from: "model.description", to: "$.description.content"},
+		{from: "model.thumbnail", to: "$.thumbnail.src"}
 	],
 	playVideo: function() {
 		// this.index is set by the main view when it handles an onShowDetail event;

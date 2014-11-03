@@ -10,7 +10,7 @@ enyo.kind({
 		]}
 	],
 	bindings: [
-		{from: ".model.category", to: ".title"}
+		{from: "model.category", to: "title"}
 	],
 	modelChanged: function() {
 		if (!this.model) {

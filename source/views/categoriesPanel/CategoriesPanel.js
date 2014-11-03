@@ -7,7 +7,7 @@ enyo.kind({
 		]}
 	],
 	bindings: [
-		{from: ".$.categoryList.selected", to: ".category"}
+		{from: "$.categoryList.selected", to: "category"}
 	],
 	categoryChanged: function() {
 		if (this.category) {

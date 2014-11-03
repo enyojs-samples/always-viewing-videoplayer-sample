@@ -7,13 +7,14 @@ enyo.kind({
 	],
 	view: "Sample.AlwaysViewingVideo.MainView",
 	populateCateogries: function() {
-		this.$.categories.fetch({fail: this.bindSafely("processError")});
+		this.$.categories.fetch({error: this.bindSafely("processError")});
 	},
 	processError: function() {
-		this.log("DEAL WITH THIS");
+		this.log("DEAL WITH THIS", arguments);
 		return true;
 	}
 });
+
 enyo.ready(function () {
 	var app = new Sample.AlwaysViewingVideo.Application({name: "app"});
 	app.populateCateogries();
