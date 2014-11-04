@@ -1,0 +1,10 @@
+{
+	"id": "com.webos.app.always-viewing-videoplayer-sample",
+	"version": "0.0.1",
+	"vendor": "LGE-SVL",
+	"type": "web",
+	"main": "index.html",
+	"title": "Always Viewing Video Player Sample",
+	"icon": "icon.png",
+	"uiRevision":2
+}
